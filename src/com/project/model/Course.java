@@ -49,7 +49,7 @@ public class Course {
     }
     
 
-  //ADD TO STRING METHOD
+  //ADD TO STRING METHODS
     
     @Override
     public String toString() {
