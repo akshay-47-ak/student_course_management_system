@@ -3,8 +3,8 @@ package com.project.serviceimpl;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.projec.service.StudentService;
 import com.project.model.Student;
+import com.project.service.StudentService;
 
 public class StudentServiceImpl implements StudentService {
 
