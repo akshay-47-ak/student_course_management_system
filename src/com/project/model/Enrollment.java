@@ -5,14 +5,33 @@ public  class Enrollment {
 	//student,course  are the attributes of Enrollment class
 	
     private Student student;  
-    private Course course;    
-
+    private Course course;
+    private String enrollmentDate;
+    private int enrollmentId;
    
     //CREATE CONSTRUCTOR
     
-    public Enrollment(Student student, Course course) {
+    public int getEnrollmentId() {
+		return enrollmentId;
+	}
+
+	public void setEnrollmentId(int enrollmentId) {
+		this.enrollmentId = enrollmentId;
+	}
+
+	public String getEnrollmentDate() {
+		return enrollmentDate;
+	}
+
+	public void setEnrollmentDateString(String enrollmentDate) {
+		this.enrollmentDate = enrollmentDate;
+	}
+
+	public Enrollment(int enrollmentId,Student student, Course course , String enrollmentDate) {
         this.student = student;
         this.course = course;
+        this.enrollmentDate = enrollmentDate;
+        this.enrollmentId = enrollmentId;
     }
 
     //GETTER SETTER METHOD
@@ -36,12 +55,14 @@ public  class Enrollment {
         this.course = course;
     }
 
+	@Override
+	public String toString() {
+		return "Enrollment [student=" + student + ", course=" + course + ", enrollmentDate=" + enrollmentDate
+				+ ", enrollmentId=" + enrollmentId + "]";
+	}
+
+	
    
-    //ADD TO STRING METHOD
-    
-    @Override
-    public String toString() {
-        return student.getName() + " is enrolled in " + course.getCourseName();
-    }
+ 
 }
 

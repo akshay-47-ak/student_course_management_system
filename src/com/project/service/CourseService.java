@@ -19,7 +19,7 @@ public interface CourseService {
 	public Course getCourseById(int courseId);
 	
 	//The Method is Created for Update the Course using Id Service
-	public void updateCourse(int courseId , Course course);
+	public void updateCourse(int courseId , Course updareCourse);
 	
 	//The Method is Created for Delete Course Using the Id Service 
 	public void deleteCourse(int courseId);
